@@ -653,3 +653,166 @@ a {
   line-height: 1.8;
   text-align: center;
 }
+
+.tabla {
+  width: 100%;
+  border: 0.5rem solid #e082a8;
+  text-align: center;
+  border-collapse: collapse;
+}
+.tabla__thead {
+  background-color: #e082a8;
+}
+.tabla__th {
+  padding: 2rem;
+}
+.tabla__tr:hover {
+  background-color: #69c5bb;
+}
+.tabla__td {
+  padding: 1rem;
+  font-size: 2.2rem;
+}
+
+.productos__heading {
+  text-align: center;
+  color: #e082a8;
+  font-family: "Italianno", sans-serif;
+  line-height: 0.8;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+.productos__heading span {
+  color: #000;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 1024px) {
+  .productos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.producto__contenido {
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+.producto__mask {
+  overflow: hidden;
+}
+.producto__imagen {
+  width: 100%;
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+.producto__imagen:hover {
+  transform: scale(1.1);
+}
+.producto__nombre {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 4rem;
+  font-size: 2.4rem;
+  color: #e082a8;
+}
+.producto__descripcion {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+.producto__precio {
+  text-align: center;
+  color: #979797;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.cita {
+  background-image: url(../img/bg_citas.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5rem 0;
+  text-align: center;
+}
+.cita__heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #FFFFFF;
+  font-size: 6rem;
+}
+.cita__texto {
+  max-width: 60rem;
+  margin: 0 auto;
+  color: #FFFFFF;
+  line-height: 2;
+}
+.cita__enlace {
+  background-color: #8ed3cc;
+  padding: 2rem 2rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color;
+  transition-duration: 300ms;
+  padding: 2rem 10rem;
+}
+@media (min-width: 1024px) {
+  .cita__enlace {
+    width: auto;
+  }
+}
+.cita__enlace:hover {
+  background-color: #69c5bb;
+}
+
+.footer {
+  padding-top: 5rem;
+}
+@media (min-width: 1024px) {
+  .footer__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer__widget {
+  text-align: center;
+}
+.footer__widget:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 4rem;
+  font-size: 3.4rem;
+}
+.footer__texto {
+  line-height: 1.8;
+}
+.footer__copyright {
+  text-align: center;
+  max-width: 120rem;
+  margin: 2rem auto 0 auto;
+  border-top: 1px solid #dfdfdf;
+  font-size: 1.6rem;
+  padding: 2rem;
+  color: #979797;
+}
